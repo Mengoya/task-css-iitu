@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffff;
+    border-bottom: 1px ridge #dddd;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.menu-div {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    padding: 20px; 
+}
+
+.menu-section {
+    border: 1px solid #000;
+    margin: 20px; 
+    padding: 20px; 
+    background-color: #e3e3e3;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.dish-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FA8072;
+    color: #fff;
+    padding: 5px 10px; 
+    border: 1px solid #000;
+    border-top-right-radius: 5px;
+    font-size: 1.25em;
+}
+
+.dish-title2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #8B0000;
+    color: #fff;
+    padding: 5px 10px; 
+    border: 1px solid #000;
+    border-top-right-radius: 5px;
+    font-size: 1.25em;
+}
+
+.dish-title3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #808000;
+    color: #fff;
+    padding: 5px 10px; 
+    border: 1px solid #000;
+    border-top-right-radius: 5px;
+    font-size: 1.25em;
+}
+
+p {
+    margin-top: 40px; 
+    color: #333;
+}
+
+
+@media (max-width: 767px) {
+    body {
+        padding: 10px; 
+    }
+
+    .menu-section {
+        width: calc(100% - 20px); 
+        margin: 10px 0; 
+        padding: 15px; 
+    }
+
+    .dish-title, .dish-title2, .dish-title3 {
+        font-size: 1.1em; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu-section {
+        width: 48%; 
+        float: left; 
+        margin: 1%; 
+    }
+
+    .menu-section:nth-child(3) {
+        width: 100%; 
+    }
+
+    .dish-title, .dish-title2, .dish-title3 {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 992px) {
+    .menu-section {
+        width: 25%;
+        float: none; 
+        margin: 20px; 
+    }
+
+    .dish-title, .dish-title2, .dish-title3 {
+        font-size: 1.25em; 
+    }
+}
